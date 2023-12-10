@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dollar Bakers</title>
+    <!--    start of js linking-->
+    <script src="../static/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <!--    end of js linking-->
+    <!--    start of css linking-->
+    <link rel="stylesheet" href="../static/css/dollar.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-grid.css">
+    <!--    end of css linking-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body  style="height:1500px">
+<div class="top-div">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+        <a class="navbar-brand" href="#" >
+            <img src="../static/images/gtech%20logo.png" alt="">
+        </a>
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <button type="button" class="btn btn-success">HOME</button>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'products-url' %}">  <button type="button" class="btn btn-success">PRODUCTS</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'pricing-url' %}">  <button type="button" class="btn btn-success">PRICING</button></a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <button  class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        GALLERY
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Events</a>
+                        <a class="dropdown-item" href="#">Pastries</a>
+                        <a class="dropdown-item" href="#">Testimonials</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                     <a href="{% url 'contacts-url' %}">  <button type="button" class="btn btn-success">ABOUT US</button></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Contacts</a>
+                        <a class="dropdown-item" href="#">address</a>
+                        <a class="dropdown-item" href="#">branches</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button style="padding-top: 10px" type="button" class="btn btn-success">ORDER ONLINE </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="container-fluid" style="margin-top:100px">
+    <h1 class="head2">Welcome to Dollar Baker's Bakery!</h1>
+    <br>
+    <p class="p1">Thank you for choosing Dollar Baker's Bakery, where quality meets affordability. <br>
+        Indulge in the Art of Baking.</p>
+    <br>
+
+</div>
+<!--start of 2nd div-->
+<div class="x">
+    <div class="x-left col-mid-6 col-sm-3 col-8 col-lg-2 col-xl-6">
+        <div class="jumbotron ">
+            <div class="container">
+                <h3 class="head3">WELCOME HOME!</h3>
+                <br>
+                <p>
+                    Here, you'll discover a world of delicious, affordable treats.
+                    From mouthwatering pastries to scrumptious bread and delightful cakes,
+                    we're here to satisfy your sweet cravings without breaking the bank.</p>
+            </div>
+        </div>
+    </div>
+    <div class="x-right  col-mid-6 col-sm-9 col-4 col-lg-10 col-xl-6">
+        <section>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                    <li data-target="#demo" data-slide-to="6"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner ">
+                    <div class="slider">
+                        <div class="carousel-item">
+                            <img src="../static/images/tequila-7235143_640%20-%20Copy.jpg" alt="pic 3">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../static/images/cake-2201819_1280.jpg" alt="pic 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/images/bread-101636_640.jpg" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/images/muffin-3510308_1280.jpg" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/images/Easy-Peanut-Butter-Cookies-07-2000-b094166424c44de782cf04d792dfba2a.jpg" alt="pic 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/images/cinnamon-roll-4719023_1280.jpg" alt="pic 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/images/cinnamon-roll-4719023_1280.jpg" alt="pic 3">
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </section>
+    </div>
+</div>
+<!--end of 2nd div-->
+
+<!--start of third div-->
+<div class="x">
+    <div class="x-left  col-mid-6 col-sm-3 col-8 col-lg-2 col-xl-6">
+        <img src="../static/images/wines-1761613_640%20-%20Copy.jpg" alt="pic 3">
+    </div>
+
+    <div class="x-right  col-mid-6 col-sm-9 col-4 col-lg-10 col-xl-6 justify-content-center">
+        <div class="container">
+            <h3 class="head4">BEVERAGES</h3>
+            <br>
+            <p>
+                <strong>We're equally passionate about offering a delightful range of beverages to accompany your favorite treats.
+                    Whether you're seeking a morning pick-me-up,
+                    a refreshing sip for a sunny afternoon, or a sweet treat to complement your dessert, we have something for every palate.</strong>
+            </p>
+        </div>
+    </div>
+</div>
+<!--end of third div-->
+
+<!--start of forth div-->
+<div class="x-small">
+    <h4>Seasonal Specials</h4>
+    <p>Experience the seasons in every delectable bite at Dollar Baker's Bakery.
+        Our seasonal specials are a celebration of nature's bounty, with fresh,
+        handcrafted creations that change with the weather. From summery fruit-infused pastries to cozy fall-inspired treats,
+        each season brings a unique twist to our menu. Explore our limited-time offerings and savor the taste of the current moment.
+        Don't miss out on these special flavors – they won't be around for long!</p>
+</div>
+<!--end of forth div-->
+<br>
+<!--start of fifth div-->
+<div class="x-small2">
+    <div class="small11">
+        <div class="container2">
+            <img src="../static/images/wedding-3703613_640%20-%20Copy.jpg" alt="Snow" style="width:100%;">
+            <div class="top-left">Homecoming</div>
+        </div>
+    </div>
+    <div class="small11">
+        <div class="container2">
+            <img src="../static/images/wedding-cake-5071370_640%20-%20Copy.jpg" alt="Snow" style="width:100%;">
+            <div class="top-left">Weddings</div>
+        </div>
+    </div>
+    <div class="small11">
+        <div class="container2">
+            <img src="../static/images/tiramisu-845117_640%20-%20Copy.jpg" alt="Snow" style="width:100%;">
+            <div class="top-left">Birthday</div>
+        </div>
+    </div>
+    <div class="small11">
+        <div class="container2">
+            <img src="../static/images/tequila-7235143_640%20-%20Copy.jpg"  alt="Snow" style="width:100%;">
+            <div class="top-left">Outdoor Parties</div>
+        </div>
+    </div>
+</div>
+<!--end of fifth div-->
+<br>
+<div class="footer-min">
+    <div class="footer-min1">
+        <p class="footer-p" >
+            <strong>Dollar Baker's Bakery is an artisanal haven, where every creation is a masterpiece.
+                They skillfully blend the finest ingredients, passion, and creativity to craft delightful treats,
+                serving customers with a touch of culinary artistry in every bite.
+                Their commitment to delivering not just baked goods, but edible works of art, makes every visit an extraordinary experience.
+            </strong>
+        </p>
+    </div>
+</div>
+<br>
+<br>
+
+<!--start of footer-->
+<br>
+<br>
+<div class="footer">
+    <div class="footer1" style="background-color: white">
+        <img src="../static/images/gtech%20logo.png" style="border-radius: 10px">
+    </div>
+    <div class="footer1" >
+        <div class="icons">
+            <h3 class="icon-h">Contact us</h3>
+            <p>email: &nbsp; dollarbakersbakery@gmail.com</p>
+            <p> website: &nbsp;www.dollarbakers.co.ke</p>
+            <p >Tel: &nbsp; +254 740 831 556</p>
+            <p >Tel: &nbsp; +254 750 742 062</p>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="icons" style="color: white">
+            <h3 class="icon-h">Stay connected</h3>
+            <i><i class="fa-brands fa-square-facebook"></i> &nbsp; Facebook</i><br>
+            <i><i class="fa-brands fa-square-x-twitter"></i> &nbsp; Twitter</i><br>
+            <i><i class="fa-brands fa-square-whatsapp"></i> &nbsp;Whatsapp </i><br>
+            <i><i class="fa-brands fa-square-instagram"></i> &nbsp;Instagram</i> <br>
+        </div>
+    </div>
+</div>
+<!--end of div-->
+<!--start of last footer div-->
+<div class="bottom-footer">
+    <p style="margin-top: 20px;font-size: 17px;color: white">
+        &copy;copyright 2023 all rights are reserved</p>
+</div>
+<!--end of last footer div-->
+<br>
+</body>
+</html>
